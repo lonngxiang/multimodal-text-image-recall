@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1 align="center">搜索query: {{query}}</h1>
+<h5 align="center">翻译query: {{translate}}</h5>
+
+<!--<h3 align="center" style="color:red">现有搜索结果</h3>-->
+<!--<div class="box">-->
+<!--{% for movie in lis1 %}-->
+
+<!--&lt;!&ndash; 图片内容 &ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li>-->
+
+<!--      <img src='{{ lis2[loop.index0] }}' width="160px" height="240px" alt=""/>-->
+<!--        <div class="deatil">-->
+
+<!--        <p>{{ movie }}</p>-->
+
+<!--      </div>-->
+<!--    </li>-->
+
+<!--  </ul>-->
+
+
+<!--{% endfor %}-->
+<!--</div>-->
+
+
+
+<!--<h3 align="center" style="color:red">语义结果1</h3>-->
+
+<!--<div class="box">-->
+<!--{% for title2 in lis5 %}-->
+
+<!--&lt;!&ndash; 图片内容 &ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li>-->
+
+<!--      <img src='{{  lis6[loop.index0]}}' width="160px" height="240px" alt=""/>-->
+<!--        <div class="deatil">-->
+
+<!--        <p>{{ title2 }}</p>-->
+
+<!--      </div>-->
+<!--    </li>-->
+
+<!--  </ul>-->
+
+
+<!--{% endfor %}-->
+<!--</div>-->
+
+<!--<h3 align="center" style="color:red">文本语义</h3>-->
+
+<!--<div class="box">-->
+<!--{% for title2 in lis5 %}-->
+
+<!--&lt;!&ndash; 图片内容 &ndash;&gt;-->
+<!--  <ul>-->
+<!--    <li>-->
+
+<!--      <img src='{{  lis6[loop.index0]}}' width="160px" height="240px" alt=""/>-->
+<!--        <div class="deatil">-->
+
+<!--        <p>{{ title2 }}</p>-->
+
+<!--      </div>-->
+<!--    </li>-->
+
+<!--  </ul>-->
+
+
+<!--{% endfor %}-->
+<!--</div>-->
+
+<h3 align="center" style="color:red">图像语义</h3>
+
+<div class="box">
+{% for title1 in lis3 %}
+
+<!-- 图片内容 -->
+  <ul>
+    <li>
+
+      <img src='{{  lis4[loop.index0] }}' width="160px" height="240px" alt=""/>
+        <a href='{{  lis4[loop.index0] }}'  target="_blank">
+        <div class="deatil">
+
+        <p>{{ title1  }}</p>
+
+
+      </div>
+            </a>
+    </li>
+
+  </ul>
+
+
+{% endfor %}
+</div>
+
+
+
+
+{% endblock content %}
