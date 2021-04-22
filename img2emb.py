@@ -10,7 +10,7 @@ from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # 加载媒资内容
-kkk_all = np.load(r"D:\tcl\媒资图\少儿动漫媒资内容1.npy")
+kkk_all = np.load(r"D:****容1.npy")
 aids = list(set([i[0] for i in kkk_all.tolist()]))
 
 # 加载模型
@@ -25,7 +25,7 @@ for i in tqdm(aids):
     try:
 
         aidss.append(i)
-        image1 = preprocess(Image.open(r"D:\tcl\媒资图\图\{}.jpg".format(i))).unsqueeze(0)
+        image1 = preprocess(Image.open(r"D:****图\{}.jpg".format(i))).unsqueeze(0)
         with torch.no_grad():
             image_features = model.encode_image(image1)
             imgs.append(image_features)
@@ -38,6 +38,6 @@ for i in tqdm(aids):
         pass
 
 # 保存
-np.save(r"D:\tcl\媒资图\权重\aidss.npy", aidss)
-np.save(r"D:\tcl\媒资图\权重\image_features_embs.npy", imgs)
+np.save(r"D:*****dss.npy", aidss)
+np.save(r"D:\****s_embs.npy", imgs)
 
