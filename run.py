@@ -70,8 +70,7 @@ def build_plot():
   url1 = "http:*****48&query={}&device_id=test&ver=3.0&user_id={}".format(
       query, random.randint(323, 98080983))
   data11 = {
-      'json': '{"device_status":{"vad_stop":true,"UiControl":{"items":[{"label":"返回顶端","url":"返回顶端"},{"label":"打开新神榜：哪吒重生","url":"打开新神榜：哪吒重生"},{"label":"播放","url":"播放"},{"label":"播放新神榜：哪吒重生","url":"播放新神榜：哪吒重生"},{"label":"打开僵尸先生","url":"打开僵尸先生"}]},"event":{"name":"movie","status":"RUNNING","event":{"type":"VIDEOLIST","topPkg":"com.tcl.walleve","topActivity":"com.tcl.walleve.searchvideo.activity.SearchVideoActivity","topViewType":"ACTIVITY"}},"room_no":"","hotel_id":"","mac":"345180200C38","launcher_appver":"7.2.03.e492257","screen_orientation":0,"sdk_version":307013,"model":"XESS-CN-MT9652-A200PRO"},"clientType":"XESS-CN-MT9652-A200PRO","iot":{"msg_receiver":"115545941","o_token":"TV_eyJhbGciOiJIUzI1NiJ9.eyJzc29JZCI6IjExNjAxNTc0MCIsInByb2R1Y3RLZXkiOiJnRXN6cDgzVTBRVEtsSkZTIiwiY2F0ZWdvcnkiOiJUViIsImV4cCI6MTYxNzk0ODM3OCwiZGV2aWNlSWQiOjQyMDIzMTgsInVzZXJJZCI6NDMwNzU0OCwiaWF0IjoxNjE1MzU2Mzc4LCJqdGkiOiJ0b2tlbklkIn0.hwhep9GAJoOdLgvV3nbWm_vw6APdhdWBeiFv-prOfWg"},"video":{"mitu":{"isVip":false}}}',
-
+      'json': '{"device_status":*****
   }
   r = requests.get(url1, params=data11).json()
   # 中控结果封装
